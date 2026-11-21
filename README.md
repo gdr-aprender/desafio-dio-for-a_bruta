@@ -51,7 +51,7 @@ Com esse ataque automatizamos um tipo de ataque que automatiza tentativas de log
 Para simular esse ataque vamos usar o sistema DVWA que está instalado em nosso servidor metasploitable, esse sistema apresenta formulário web que usuário irá digitar usuário e senha, vamos buscar entender como funcionar esse formulário de login e suas brechas.
 Automatizando esse ataque vamos buscar descobrir usuários e senhas fracos para ter acesso a esse formulário.
 Primeiro passo é entender como formulário funciona e suas possíveis brechas, digito endereço do formulário que será:
-http://192.168.56.105/dwa/login.php
+http://192.168.56.105/dvwa/login.php
 Agora no navegador usado vou abrir barra de desenvolver para entender funcionamento e como é enviado os dados para servidor do formulário web, com essas informações e como realizado o login junto ao servidor, posso iniciar automatização do ataque a esse formulário.
 Para essa automatização vou fornecer ao Medusa duas Wordlist com usuários e senhas possíveis, 
 Wordlist são arquivos textos que contêm senhas e usuários comuns que serão usados pelo Medusa.
