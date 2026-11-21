@@ -7,7 +7,7 @@ Primeira simulação:  força bruta em FTP.
 Para iniciar a simulação vou primeiramente realizar enumeração, que seria descobrir serviços que estão disponíveis no meu host alvo do ataque.
 Vou utilizar uma ferramenta que encontramos no Kali Linux, que será o NMAP com ele podemos realizar a enumeração e verificar serviços disponíveis. Sendo assim no terminal do Kali Linux vou executar o comando abaixo.
 
-Nmap -Sv -p 21,22,80,445,139  192.168.56.105
+nmap -sV -p 21,22,80,445,139  192.168.56.105
 
 Esse comando vai scanear as portas mencionadas no comando e tentar identificar a versão do serviço executado se elas estão abertas.  Onde tiver porta aberta, significa que tenho um serviço desatualizado e vulnerável para ataque.
 Nosso caso nosso alvo será porta 21 que é porta serviço FTP.
